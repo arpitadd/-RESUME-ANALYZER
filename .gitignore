@@ -1,0 +1,58 @@
+# ---------------------------
+# GLOBAL IGNORE
+# ---------------------------
+node_modules/
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+
+# ---------------------------
+# FRONTEND (React + Vite)
+# ---------------------------
+fe/node_modules/
+fe/dist/
+fe/.vite/
+fe/.next/
+fe/*.local
+
+# Build output
+dist/
+build/
+
+# ---------------------------
+# BACKEND (Node + Express)
+# ---------------------------
+be/node_modules/
+be/build/
+be/dist/
+be/uploads/
+be/temp/
+be/.cache/
+
+# TypeScript (if added later)
+*.tsbuildinfo
+
+# ---------------------------
+# Misc
+# ---------------------------
+*.bak
+*.swp
+*.tmp

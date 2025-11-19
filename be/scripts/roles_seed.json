@@ -1,0 +1,171 @@
+[
+  {
+    "company_name": "Google",
+    "role_title": "Software Engineer I",
+    "description": "Work on backend services, coding in Java/Python...",
+    "required_skills": ["Data Structures", "Algorithms", "Java", "Python", "Distributed Systems"]
+  },
+  {
+    "company_name": "Amazon",
+    "role_title": "SDE I",
+    "description": "Build customer-facing services...",
+    "required_skills": ["Algorithms", "Java", "System Design", "Data Structures"]
+  } ,
+  {
+    "company_name": "Microsoft",
+    "role_title": "Software Developer",
+    "description": "Develop cloud solutions using Azure...",
+    "required_skills": ["C#", "Azure", "Cloud Computing", "Data Structures"]
+  },
+    {
+        "company_name": "Facebook",
+        "role_title": "Software Engineer",
+        "description": "Work on social media platform features...",
+        "required_skills": ["React", "JavaScript", "Algorithms", "Data Structures"]
+    },
+    {
+        "company_name": "Apple",
+        "role_title": "iOS Developer",
+        "description": "Develop applications for iOS devices...",
+        "required_skills": ["Swift", "Objective-C", "iOS SDK", "UI/UX Design"]
+    },
+    {
+        "company_name": "Netflix",
+        "role_title": "Backend Engineer",
+        "description": "Build and maintain streaming services...",
+        "required_skills": ["Java", "Microservices", "Cloud Computing", "Data Structures"]
+    },
+    {
+        "company_name": "Tesla",
+        "role_title": "Autopilot Software Engineer",
+        "description": "Develop software for autonomous driving...",
+        "required_skills": ["C++", "Python", "Machine Learning", "Computer Vision"]
+    },
+    {
+        "company_name": "Airbnb",
+        "role_title": "Full Stack Developer",
+        "description": "Work on both frontend and backend of the platform...",
+        "required_skills": ["JavaScript", "Node.js", "React", "Database Management"]
+    },
+    {
+        "company_name": "Uber",
+        "role_title": "Software Engineer",
+        "description": "Build ride-sharing platform features...",
+        "required_skills": ["Go", "Microservices", "Data Structures", "Algorithms"]
+    },
+    {
+        "company_name": "LinkedIn",
+        "role_title": "Backend Developer",
+        "description": "Develop and maintain professional networking services...",
+        "required_skills": ["Java", "Spring", "Database Management", "Data Structures"]
+    },
+    {
+        "company_name": "Spotify",
+        "role_title": "Software Engineer",
+        "description": "Work on music streaming services...",
+        "required_skills": ["Python", "Django", "Cloud Computing", "Data Structures"]
+    },
+    {
+        "company_name": "Salesforce",
+        "role_title": "Apex Developer",
+        "description": "Develop CRM solutions using Salesforce platform...",
+        "required_skills": ["Apex", "Visualforce", "Salesforce APIs", "Database Management"]
+    },
+    {
+        "company_name": "Slack",
+        "role_title": "Backend Engineer",
+        "description": "Build and maintain communication platform services...",
+        "required_skills": ["Java", "Microservices", "Data Structures", "Algorithms"]
+    },
+    {
+        "company_name": "Dropbox",
+        "role_title": "Software Engineer",
+        "description": "Work on cloud storage solutions...",
+        "required_skills": ["Python", "Go", "Cloud Computing", "Data Structures"]
+    },
+    {
+        "company_name": "Pinterest",
+        "role_title": "Full Stack Engineer",
+        "description": "Develop features for visual discovery platform...",
+        "required_skills": ["JavaScript", "React", "Node.js", "Database Management"]
+    },
+    {
+        "company_name": "Reddit",
+        "role_title": "Backend Developer",
+        "description": "Build and maintain social news aggregation services...",
+        "required_skills": ["Python", "Django", "Data Structures", "Algorithms"]
+    },
+    {
+        "company_name": "Zoom",
+        "role_title": "Software Engineer",
+        "description": "Develop video conferencing solutions...",
+        "required_skills": ["C++", "Java", "Networking", "Data Structures"]
+    },
+    {
+        "company_name": "Shopify",
+        "role_title": "Backend Engineer",
+        "description": "Build e-commerce platform features...",
+        "required_skills": ["Ruby on Rails", "PostgreSQL", "Data Structures", "Algorithms"]
+    }
+,
+    {
+        "company_name": "Atlassian",
+        "role_title": "Software Engineer",
+        "description": "Develop collaboration tools like Jira and Confluence...",
+        "required_skills": ["Java", "Spring", "Database Management", "Data Structures"]
+    },
+    {
+        "company_name": "GitHub",
+        "role_title": "Backend Developer",
+        "description": "Work on version control and collaboration platform...",
+        "required_skills": ["Ruby on Rails", "Go", "Database Management", "Data Structures"]
+    },
+    {
+        "company_name": "Twitter",
+        "role_title": "Software Engineer",
+        "description": "Build and maintain social networking services...",
+        "required_skills": ["Scala", "Java", "Data Structures", "Algorithms"]
+    },
+    {
+        "company_name": "Snapchat",
+        "role_title": "iOS Engineer",
+        "description": "Develop features for multimedia messaging app...",
+        "required_skills": ["Swift", "Objective-C", "iOS SDK", "UI/UX Design"]
+    },
+    {
+        "company_name": "eBay",
+        "role_title": "Full Stack Developer",
+        "description": "Work on online marketplace platform...",
+        "required_skills": ["JavaScript", "Node.js", "React", "Database Management"]
+    },
+    {
+        "company_name": "Oracle",
+        "role_title": "Database Developer",
+        "description": "Develop and maintain database solutions...",
+        "required_skills": ["SQL", "PL/SQL", "Database Design", "Data Structures"]
+    },
+    {
+        "company_name": "IBM",
+        "role_title": "Software Engineer",
+        "description": "Work on enterprise software solutions...",
+        "required_skills": ["Java", "Cloud Computing", "Data Structures", "Algorithms"]
+    },
+    {
+        "company_name": "Intel",
+        "role_title": "Firmware Engineer",
+        "description": "Develop low-level software for hardware components...",
+        "required_skills": ["C", "Assembly", "Embedded Systems", "Data Structures"]
+    },
+    {
+        "company_name": "NVIDIA",
+        "role_title": "Software Engineer",
+        "description": "Work on graphics processing and AI solutions...",
+        "required_skills": ["C++", "CUDA", "Machine Learning", "Data Structures"]
+    },
+    {
+        "company_name": "Adobe",
+        "role_title": "Software Developer",
+        "description": "Develop creative software solutions...",
+        "required_skills": ["C++", "JavaScript", "UI/UX Design", "Data Structures"]
+    }
+]
