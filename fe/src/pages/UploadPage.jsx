@@ -20,7 +20,6 @@ export default function UploadPage() {
     "Almost done — finalizing your results…"
   ];
 
-  // 🔥 Sequential loading messages every 10 seconds
   useEffect(() => {
     if (!loading) return;
 
@@ -30,7 +29,7 @@ export default function UploadPage() {
       setMessageIndex((prev) =>
         prev < loadingMessages.length - 1 ? prev + 1 : prev
       );
-    }, 10000); // 10 seconds per message
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [loading]);
@@ -75,9 +74,10 @@ export default function UploadPage() {
 
     const formData = new FormData();
     formData.append("resume", file);
+    const api_url = import.meta.env.VITE_BACKEND_URL;
 
     try {
-      const res = await fetch("http://localhost:3000/api/analyze-resume", {
+      const res = await fetch(`${api_url}/api/analyze-resume`, {
         method: "POST",
         body: formData,
       });
@@ -95,13 +95,11 @@ export default function UploadPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-50 via-white to-sky-100 p-4 relative overflow-hidden">
-      {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-sky-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
       <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 
       <div className="max-w-4xl w-full relative z-10">
-        {/* Header Section */}
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <div className="bg-gradient-to-br from-sky-400 to-blue-600 p-4 rounded-2xl shadow-lg">
@@ -116,9 +114,7 @@ export default function UploadPage() {
           </p>
         </div>
 
-        {/* Main Card */}
         <div className="bg-white/80 backdrop-blur-sm p-8 shadow-2xl rounded-3xl border border-sky-100">
-          {/* LOADING SCREEN */}
           {loading && (
             <div className="mt-6 text-center">
               <div className="bg-gradient-to-br from-sky-500 to-blue-600 text-white p-8 rounded-2xl shadow-xl">
@@ -141,11 +137,12 @@ export default function UploadPage() {
                   </p>
                 </div>
 
-                {/* Progress Bar */}
                 <div className="mt-6 w-full bg-white/30 rounded-full h-2 overflow-hidden">
-                  <div 
+                  <div
                     className="h-full bg-white rounded-full transition-all duration-1000 ease-out"
-                    style={{ width: `${((messageIndex + 1) / loadingMessages.length) * 100}%` }}
+                    style={{
+                      width: `${((messageIndex + 1) / loadingMessages.length) * 100}%`
+                    }}
                   ></div>
                 </div>
               </div>
@@ -154,13 +151,12 @@ export default function UploadPage() {
 
           {!loading && (
             <>
-              {/* Upload Area */}
               <div
                 className={`border-2 border-dashed rounded-2xl p-16 text-center transition-all duration-300 ${
-                  dragActive 
-                    ? "bg-sky-50 border-sky-400 scale-105 shadow-lg" 
-                    : file 
-                    ? "bg-sky-50/50 border-sky-300" 
+                  dragActive
+                    ? "bg-sky-50 border-sky-400 scale-105 shadow-lg"
+                    : file
+                    ? "bg-sky-50/50 border-sky-300"
                     : "border-gray-300 hover:border-sky-400 hover:bg-sky-50/30"
                 }`}
                 onDragOver={(e) => {
@@ -179,10 +175,7 @@ export default function UploadPage() {
                 />
 
                 {!file ? (
-                  <label
-                    htmlFor="fileUpload"
-                    className="cursor-pointer block"
-                  >
+                  <label htmlFor="fileUpload" className="cursor-pointer block">
                     <div className="flex justify-center mb-4">
                       <div className="bg-sky-100 p-4 rounded-full">
                         <Upload className="w-10 h-10 text-sky-600" />
@@ -205,7 +198,9 @@ export default function UploadPage() {
                       <FileText className="w-10 h-10 text-sky-600" />
                     </div>
                     <p className="font-semibold text-gray-800 text-lg">{file.name}</p>
-                    <p className="text-sm text-gray-500">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                    <p className="text-sm text-gray-500">
+                      {(file.size / 1024 / 1024).toFixed(2)} MB
+                    </p>
                     <button
                       onClick={() => setFile(null)}
                       className="text-sky-600 hover:text-sky-700 text-sm font-medium underline"
@@ -218,7 +213,7 @@ export default function UploadPage() {
 
               {error && (
                 <div className="mt-4 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg flex items-center gap-2">
-                  <span className="text-lg">⚠️</span>
+                  <span className="text-lg">⚠</span>
                   <p className="font-medium">{error}</p>
                 </div>
               )}
@@ -244,7 +239,6 @@ export default function UploadPage() {
           )}
         </div>
 
-        {/* Features Section */}
         {!loading && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
             <div className="bg-white/60 backdrop-blur-sm p-6 rounded-xl shadow-md border border-sky-100 text-center">
